@@ -50,5 +50,4 @@ describe("HelloWorld.vue", () => {
     expect(wrapper.vm.isClicked).toBe(true);
     expect(wrapper.classes()).toContain("isClicked");
   });
-
 });

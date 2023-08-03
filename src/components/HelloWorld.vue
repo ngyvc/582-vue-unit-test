@@ -1,5 +1,5 @@
 <template>
-  <div :class="{isClicked}" v-if="visible" @click="action">Button</div>
+  <div :class="{ isClicked }" v-if="visible" @click="action">Button</div>
 </template>
 
 <script>
@@ -21,7 +21,7 @@ export default {
     action() {
       this.isClicked = true;
       this.$emit("action", true);
-    }
+    },
   },
 };
 </script>
