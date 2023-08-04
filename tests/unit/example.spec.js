@@ -50,4 +50,8 @@ describe("HelloWorld.vue", () => {
     expect(wrapper.vm.isClicked).toBe(true);
     expect(wrapper.classes()).toContain("isClicked");
   });
+
+  it("changes props example", async () => {
+    // await wrapper.setProps({ course: { name: "react" } })
+  });
 });
