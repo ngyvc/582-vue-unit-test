@@ -23,7 +23,7 @@ describe("HelloWorld.vue", () => {
     const buttonText = "Button";
     const wrapper = shallowMount(HelloWorld);
     // expect(wrapper.text()).toBe(buttonText);
-    expect(wrapper.find("div").text()).toBe(buttonText);
+    expect(wrapper.find("[data-testid='action']").text()).toBe(buttonText);
   });
 
   it("hides the button when visible is false", async () => {
