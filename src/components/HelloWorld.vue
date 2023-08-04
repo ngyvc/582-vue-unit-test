@@ -1,5 +1,12 @@
 <template>
-  <div :class="{ isClicked }" v-if="visible" @click="action">Button</div>
+  <div
+    data-testid="action"
+    :class="{ isClicked }"
+    v-if="visible"
+    @click="action"
+  >
+    Button
+  </div>
 </template>
 
 <script>
